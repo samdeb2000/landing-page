@@ -4,86 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+
+    <!-- External Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ------------- -->
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Site Navigation -->
     <header class="site-header">
-      <nav class="navbar">
-        <span class="logo">Header Logo</span>
-        <div class="nav-links">
-          <a href="#">header link one</a>
-          <a href="#">header link two</a>
-          <a href="#">header link three</a>
-        </div>
-      </nav>
+      <div class="container">
+        <nav class="navbar">
+          <span class="logo">Header Logo</span>
+          <ul class="nav-links">
+            <li><a href="#">header link one</a></li>
+            <li><a href="#">header link two</a></li>
+            <li><a href="#">header link three</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Page Content -->
     <main>
       <!-- Hero Section -->
-      <section class="hero">
-        <div class="hero-content">
-          <h1>This website is awesome</h1>
-          <p>
-            This website has some subtext that goes here under the main title.
-            It's a smaller font and the color is lower contrast.
-          </p>
-          <button class="btn btn-primary">Sign up</button>
+      <section class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1>This website is awesome</h1>
+            <p>
+              This website has some subtext that goes here under the main title.
+              It's a smaller font and the color is lower contrast.
+            </p>
+            <button class="btn">Sign up</button>
+          </div>
+          <div class="hero-img-wrapper">
+            <img src="https://placehold.co/600x400" alt="" class="hero-img" />
+          </div>
         </div>
-        <img src="https://placehold.co/600x400" alt="" class="hero-img" />
       </section>
 
       <!-- Information Section -->
       <section class="info-section">
-        <h2>Some random information.</h2>
-        <div class="info-gallary">
-          <div class="info-item">
-            <img src="https://placehold.co/600x400" alt="" />
-            <p>this is some subtext under an illustration or image</p>
-          </div>
-          <div class="info-item">
-            <img src="https://placehold.co/600x400" alt="" />
-            <p>this is some subtext under an illustration or image</p>
-          </div>
-          <div class="info-item">
-            <img src="https://placehold.co/600x400" alt="" />
-            <p>this is some subtext under an illustration or image</p>
-          </div>
-          <div class="info-item">
-            <img src="https://placehold.co/600x400" alt="" />
-            <p>this is some subtext under an illustration or image</p>
+        <div class="container">
+          <h2>Some random information.</h2>
+          <div class="info-gallery">
+            <figure class="info-item">
+              <img src="https://placehold.co/150x150" alt="Illustration 1" />
+              <figcaption>
+                this is some subtext under an illustration or image
+              </figcaption>
+            </figure>
+            <figure class="info-item">
+              <img src="https://placehold.co/150x150" alt="Illustration 2" />
+              <figcaption>
+                this is some subtext under an illustration or image
+              </figcaption>
+            </figure>
+            <figure class="info-item">
+              <img src="https://placehold.co/150x150" alt="Illustration 3" />
+              <figcaption>
+                this is some subtext under an illustration or image
+              </figcaption>
+            </figure>
+            <figure class="info-item">
+              <img src="https://placehold.co/150x150" alt="Illustration 4" />
+              <figcaption>
+                this is some subtext under an illustration or image
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
       <!-- Quote Section -->
       <section class="quote-section">
-        <blockquote>
-          This is an inspiring quote, or a testimonial from a customer. Maybe
-          it's just filing up space, or maybe people will actually read it. Who
-          knows? All I know is that it looks nice.
-        </blockquote>
-        <cite>-Thor, God of Thunder</cite>
+        <div class="container quote-container">
+          <blockquote>
+            This is an inspiring quote, or a testimonial from a customer. Maybe
+            it's just filing up space, or maybe people will actually read it.
+            Who knows? All I know is that it looks nice.
+          </blockquote>
+          <cite>-Thor, God of Thunder</cite>
+        </div>
       </section>
 
       <!-- Call to Action Section -->
       <section class="cta-section">
-        <div class="cta-container">
-          <div class="cta-text">
-            <p>Call to action it's time!</p>
-            <p>
-              Sign up for our product by clicking that button right over there!
-            </p>
+        <div class="container">
+          <div class="cta-wrapper">
+            <div class="cta-text">
+              <h3>Call to action it's time!</h3>
+              <p>
+                Sign up for our product by clicking that button right over
+                there!
+              </p>
+            </div>
+            <button class="btn secondary-btn">Sign up</button>
           </div>
-          <button class="btn btn-secondary">Sign up</button>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="site-footer">
-      <p>Copyright &copy; The Odin Project 2021</p>
+      <div class="container">
+        <p>Copyright &copy; The Odin Project 2021</p>
+      </div>
     </footer>
   </body>
 </html>
